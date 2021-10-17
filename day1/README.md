@@ -1,4 +1,4 @@
-# Day 1 Azure Fundamentals & Infrastructure
+# Day 1 Azure Fundamentals & Infrastructure !
 
 ## Welcome
 
