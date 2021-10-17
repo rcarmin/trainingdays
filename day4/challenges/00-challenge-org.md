@@ -170,33 +170,8 @@ In the dropdown menu all possible access levels are listed. For our scenario we 
 
 ## Clone the repository to your local machine
 
-Cloning a public repository from GitHub using git commandline tool is very easy, but when it comes to clone a private repository it is a bit tricky. You can either clone the repository with a password, a token or you can clone it using SSH credentials.
-
-### Clone the repository with a password
-
-Navigate to your repository, select the _<> Code_ section, click the green _Code_ botton and copy the _HTTPS_ url.
-
-![GitHub repository clone HTTPS](./images/gh-clone-repo-https.png)
-
-Now, open a terminal and clone the repository to a location of your choice using the git clone command and your GitHub username:
-
-```Shell
-git clone https://your_username@repository_url
-```
-
-After a short time, you will be prompted for a password. Once the git client authenticated, the repository is cloned to your local machine.
-
-::: tip
-📝 _If you have enabled MFA for your account, you need to use SSH credentials to clone the repository._
-:::
-
-Using your username and password you have to input your password every time for each operation to the repository. You can permanently store your password in the git configuration, but first you have to enable the credentials helper by running the git config command:
-
-```Shell
-git config --global credential.helper store
-```
-
-Now you only have to enter your password once, when you clone a repository.
+Cloning a public repository from GitHub using git commandline tool is very easy, but when it comes to clone a private repository it is a bit tricky. 
+(note: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.)
 
 ### Clone the repository with SSH keys
 
